@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patisserie</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <div class="page">
+         <header>
+        <div class="top-header">
+            <a href="login.html">login </a>
+         </div>
+        <nav>
+            <div class="left-nav">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">cakes</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <h1>patisserie</h1>
+            </div>
+            <div class="right-nav" onclick="openCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>your order </p>  
+            </div>
+        </nav>
+    </header>
+    <section class="first">
+        <h1>delight in <br>
+        every bite!</h1>
+        <p>we care about every detail to bake the best cake specialy for you</p>
+        <button>order now</button>
+    </section>
+
+     <section class="page2">
+        <h1>signature</h1>
+
+        <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+             <div class="card">
+                <img src="img/choclate cake.jpeg" alt="">
+                <h2>custom cake </h2>
+                <p>specialy for you</p>
+                 <button onclick="addToCart('Custom Cake')">Add to Cart</button>
+            </div>
+    </div>
+    <div class="swiper-slide">
+         <div class="card">
+                <img src="img/macrons.jpeg" alt="">
+                <h2>macrons</h2>
+                <p>specialy for you</p>
+                <button onclick="addToCart('Macrons')">Add to Cart</button>
+            </div>
+    </div>
+    <div class="swiper-slide">
+         <div class="card">
+                <img src="img/cup-cake.jpeg" alt="">
+                <h2>cupcake collection</h2>
+                <p>specialy for you</p>
+                <button onclick="addToCart('Cup Cake')">Add to Cart</button>
+            </div>
+    </div>
+    <div class="swiper-slide">
+          <div class="card">
+                <img src="img/weeding-cake.jpeg" alt="">
+                <h2>wedding cakes</h2>
+                <p>specialy for you</p>
+                <button onclick="addToCart('Wedding Cake')">Add to Cart</button>
+            </div>
+    </div>
+
+  </div>
+  
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+        </div>
+    </section>
+    <section class="page3">
+        <h1>holiday collection</h1>
+        <div class="sale">20% off</div>
+        <button>order today</button>
+    </section>
+    </div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <button onclick="closeCart()">close <i class="fa-solid fa-x"></i></button>
+    </div>
+
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

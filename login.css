@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(233, 39, 117, 0.61),rgba(140, 13, 34, 0.432));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    text-transform: capitalize;
+    color: white;
+}
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+background-color: rgba(233, 39, 117, 0.902);
+color: white;
+cursor: pointer;
+transition: 0.3s ease;
+ }
+ input[type="submit"]:hover {
+    background-color: #a61a2f;
+ }

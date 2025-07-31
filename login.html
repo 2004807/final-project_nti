@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1>please fill this informations</h1>
+    <form id="registerForm">
+        <input type="text" name="username" id="user" placeholder="Username" required>
+        <input type="email" name="mail" id="mail" placeholder="Email" required>
+        <input type="password" name="pass" id="pass" placeholder="Password" required>
+        <input type="submit" id="submit" >
+    </form>
+    <script>
+       let form = document.getElementById("registerForm")
+
+
+       form.addEventListener("submit",function(e) {
+         e.preventDefault()
+          let userName = document.getElementById("user").value;
+        let email = document.getElementById("mail").value;
+        let password = document.getElementById("pass").value;
+
+         localStorage.setItem("userName",userName)
+       localStorage.setItem("email",email)
+       localStorage.setItem("password",password)
+
+       window.location.href = "main.html"
+       })  
+    </script>
+</body>
+</html>
